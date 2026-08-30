@@ -25,7 +25,7 @@ class Layer:
 
 
 #Multi layer perceptron (MLP)
-class MLP():
+class MLP:
     def __init__(self, nin, nout):#nout is a list, it represent the number of neurons at layer index i
         sz = [nin] + nout
         self.layers = [Layer(sz[i], sz[i+1]) for i in range(len(nout))] #array of layers, each of size nout[i] and of dim   
